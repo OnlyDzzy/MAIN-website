@@ -136,11 +136,13 @@ body {
     .nextContent{
         display: flex;
         justify-content: center;
+       
       
     }
     .image{
         border-radius: 30px;
-        max-width: 30%;  //Адаптивные изображения
+        max-width: 40%;
+        min-width: 35%;  //Адаптивные изображения
         
     }
     
@@ -162,7 +164,16 @@ body {
         }
         .content__page{ 
             flex-wrap: wrap;
-            
+        }
+        .nextContent{
+        min-height: 100px;
+        min-width: 200px;
+
+        }
+        .image{
+            margin: 0;
+            padding: 0;
+            min-width: 90%;
         }
     }
     @mixin BordeRBlock{
